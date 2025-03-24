@@ -6,74 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ModCraft</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <div class="header--div">
-            <h1>ModCraft</h1>
-            <img src="img/icons8-стул-40.png" alt="furniture">
+    <header class="header wrapper">
+        <div class="header__title">
+            <h1 class="header__brand albert">ModCraft</h1>
+            <img class="header__icon" src="img/icons8-стул-40.png" alt="furniture">
         </div>
         <nav>
-            <ul class="nav--ul">
-                <li>About us</li>
-                <li>Catalog</li>
-                <li>Projects</li>
-                <li>News & Articles</li>
-                <li>Contacts</li>
+            <ul class="nav__list albert">
+                <li> <a href="#">About us</a></li>
+                <li> <a href="#">Catalog</a></li>
+                <li> <a href="#">Projects</a></li>
+                <li><a href="#">News & Articles</a></li>
+                <li><a href="#">Contacts</a></li>
             </ul>
         </nav>
-        <section class="logo">
-            <ul class="logo--ul">
-                <li><img src="img/icons8-twitter-bird-60.png" alt="twitter"></li>
-                <li><img src="img/icons8-instagram-60.png" alt="instagram"></li>
-                <li><img src="img/icons8-facebook-60.png" alt="facebook"></li>
-                <li><img src="img/icons8-youtube-60.png" alt="youtube"></li>
+        <section class="social__icons">
+            <ul class="social__list">
+                <li><a href="https://x.com/?lang=uk" target="_blank" rel="noopener noreferrer"><img
+                            src="img/icons8-twitter-bird-60.png" alt="twitter"></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img
+                            src="img/icons8-instagram-60.png" alt="instagram"></a></li>
+                <li><a href="https://www.facebook.com/?locale=uk_UA" target="_blank" rel="noopener noreferrer"><img
+                            src="img/icons8-facebook-60.png" alt="facebook"></a></li>
+                <li><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><img
+                            src="img/icons8-youtube-60.png" alt="youtube"></a></li>
             </ul>
         </section>
     </header>
     <main>
         <section class="cover">
-            <div class="cover--info">
-
-                <div class="cover--info__item1">
-                    <h2>Creating Furniture Crafting Memories</h2>
-                    <p class="font-color">Welcome to the design agency and store of attractive, cozy, and ergonomic
-                        furniture for your
-                        dream home.</p>
-                    <button class="btn">Shop Now</button>
+            <div class="cover__info">
+                <div class="cover__info-item">
+                    <h2 class="cover__title philosopher">Creating Furniture Crafting Memories</h2>
+                    <p class=" cover__text albert">Welcome to the design agency and store of attractive, cozy, and
+                        ergonomic
+                        furniture for your dream home.</p>
+                   <a href="#highlights"><button class="button albert">Shop Now</button></a> 
                 </div>
-                <div class="cover--info__item2">
-                    <div><img src="img/Group 3.svg" alt="">
-                        <p>Ergonomics</p>
+                <div class="cover__features">
+                    <div class="cover__features-item"><img src="img/Group 3.svg" alt="">
+                        <p class="albert">Ergonomics</p>
                     </div>
-                    <div><img src="img/Group 4.svg" alt="">
-                        <p>Sustainability</p>
+                    <div class="cover__features-item"><img src="img/Group 4.svg" alt="">
+                        <p class="albert">Sustainability</p>
                     </div>
-                    <div><img src="img/Group 2.svg" alt="">
-                        <p>Versatility</p>
+                    <div class="cover__features-item"><img src="img/Group 2.svg" alt="">
+                        <p class="albert">Versatility</p>
                     </div>
                 </div>
             </div>
-            <div class="cover--img">
+            <div class="cover__img">
                 <img src="img/photo-1583847268964-b28dc8f51f92.avif" alt="furniture">
             </div>
         </section>
-        <section class="about-us">
-            <div class="about-us__block1">
-                <div class="about-us__block1--div-img"><img src="img/65fd815efef43e000f171cca_optimized_1189.webp"
+        <!-------------------------------about-us -->
+        <section class="about-us wrapper">
+            <div class="about-us__block mb120">
+                <div class="about-us__image"><img src="img/65fd815efef43e000f171cca_optimized_1189.webp"
                         alt=""></div>
-                <div class="about-us__block1--div-info">
-                    <span class="font-color"><img src="img/1.svg" alt=""> About us</span>
-                    <h3>Excellence in
-                        Every Detail</h3>
-                    <p class="font-color">ModCraft is a leading furniture manufacturer known worldwide for its
+                <div class="about-us__info">
+                    <span class="about-us__label text-main"><img src="img/1.svg" alt=""> About us</span>
+                    <h4 class="about-us__title">Excellence in
+                        Every Detail</h4>
+                    <p class="about-us__text text-main">ModCraft is a leading furniture manufacturer known worldwide for its
                         impeccable quality, exceptional customer service, and affordable prices. This is a family-owned,
                         professional furniture company conveniently nestled in the heart of New York.</p>
-                    <button class="btn">Learn more</button>
+                    <button class="button">Learn more</button>
                 </div>
             </div>
-            <div class="about-us__block2">
+            <div class="about-us__block">
                 <div class="about-us__block2--div-info">
                     <p class="coma">,,</p>
                     <h5 class="font-color">"Design creates culture. Culture shapes values. Values determine the future
@@ -115,7 +124,7 @@
 
 
         </section>
-        <section class="features">
+        <section class="features" >
             <div class="features__img">
                 <img src="img/65fd6f6d54cd7e000e1b7e28_optimized_930_c930x1395-0x0.webp" alt="">
             </div>
@@ -214,7 +223,7 @@
                 </div>
             </div>
         </section>
-        <section class="highlights">
+        <section class="highlights" id="highlights">
             <div class="highlights__header">
                 <img src="img/1.svg" alt="">
                 <h4>FEATURED PRODUCTS</h4>
@@ -368,14 +377,66 @@
                 <div class="dots" id="dots"></div>
             </div>
         </section>
-
+        <section class="news">
+            <div class="news__wrapper">
+                <div class="news__title"><img src="img/1.svg" alt="">
+                    <h4>latest news</h4>
+                </div>
+                <h5 class="news__subtitle">Explore This Section for Insightful Articles, Design Tips, and Updates</h5>
+                <div class="news__cards">
+                    <div class="news__cards-left">
+                        <div class="news__card">
+                            <img src="img/news-img1.webp" alt="">
+                            <p>Tips | 21 September 2023</p>
+                            <span>Textures Make the Difference</span>
+                            <button>Read More</button>
+                        </div>
+                        <div class="news__card">
+                            <img src="img/news-img3.webp" alt="">
+                            <p>Tips | 16 January 2024</p>
+                            <span>Top Accessories for a Living Room</span>
+                            <button>Read More</button>
+                        </div>
+                    </div>
+                    <div class="news__cards-right">
+                        <div class="news__card">
+                            <img src="img/news-img2.webp" alt="">
+                            <p>News | 12 April 2024</p>
+                            <span>New Furniture Collection Release, Summer 2024</span>
+                            <button>Read More</button>
+                        </div>
+                        <div class="news__card">
+                            <img src="img/news-img4.webp" alt="">
+                            <p>Guide | 05 Mar 2024</p>
+                            <span>Two Main Sofa Styles in 2024</span>
+                            <button>Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="gallery">
+            <div class="gallery__wrapper">
+                <button class="a">&#10094;</button>
+                <button>&#10095;</button>
+            </div>
+        </section>
     </main>
-
-
-
-
-
-
+    <!-- <div class="carousel-container">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/swiper1.webp" alt="Image 1"></div>
+                <div class="swiper-slide"><img src="img/swiper2.webp" alt="Image 2"></div>
+                <div class="swiper-slide"><img src="img/swiper3.webp" alt="Image 3"></div>
+                <div class="swiper-slide"><img src="img/swiper4.webp" alt="Image 4"></div>
+                <div class="swiper-slide"><img src="img/swiper5.webp" alt="Image 5"></div>
+                <div class="swiper-slide"><img src="img/swiper6.webp" alt="Image 6"></div>
+                <div class="swiper-slide"><img src="img/swiper7.webp" alt="Image 7"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div> -->
 
 
 
