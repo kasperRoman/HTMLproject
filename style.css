@@ -3,24 +3,20 @@
     padding: 0;
     box-sizing: border-box;
 }
-.albert{
+body{
     font-family: "Albert Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
 }
 .philosopher {
     font-family: "Philosopher", sans-serif;
     font-weight: 400;
-    font-style: normal;
   }
 .wrapper{
     width: 80%;
     max-width: 1172px;
-}
-.font-color {
-    color: rgb(133, 133, 133);
+    margin: auto;
 }
 .button{
+    font-family: "Albert Sans", sans-serif;
     width: max-content;
     padding: 17px 30px;
     border: none;
@@ -39,24 +35,19 @@
 .text-main{
     color: rgb(133, 133, 133);
 }
-.btn {
-    width: 150px;
-    height: 50px;
-    border-radius: 800px;
-    border: none;
-    background-color: rgb(2, 119, 110);
-    color: white;
-    font-weight: 900;
-}
+
 /*---------------------------header--------------------------------------- */
 .header {
+    background-color: rgb(247, 247, 245);
+}
+.header__wrapper{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 40px auto 80px;
-   
+    padding-top: 40px  ;
+    padding-bottom: 80px;
+    
 }
-
 .header__title {
     display: flex;
     justify-content: flex-start;
@@ -67,18 +58,19 @@ h1 {
     font-size: 30px;
     font-weight: 800;
     color: rgb(59, 59, 59);
+    z-index: 2;
 }
 .header__icon {
     width: 45px;
     height: 55px;
     position: absolute;
-    z-index: -10;
+    z-index: 1;
     left: -20px;
 }
 .nav__list {
     display: flex;
     justify-content: flex-start;
-    gap: 20px;
+    gap: 16px;
     list-style: none;
 }
 .nav__list a{
@@ -93,32 +85,42 @@ font-weight: 500;
     display: flex;
     justify-content: start;
     list-style-type: none;
-    gap: 20px;
+    gap: 25px;
 }
 .social__list img {
     height: 18px;
     width: auto;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+.social__list img:hover {
+    transform: scale(1.1); 
+    filter: brightness(1.8); 
 }
 
 /* ------------------------------------main-------cover---------------------------------------- */
 .cover {
-    padding-left: 12vw;
-    padding-bottom: 12vh;
+    background-color: rgb(247, 247, 245);
     display: flex;
     justify-content: center;
+    
+}
+.cover__wrapper {
+    max-width: 1440px; 
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    background-color: rgb(247, 247, 245);
+    margin-left: 134px;
 }
 .cover__info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    width: 45%;
+    width: 48%;
     gap: 60px;
 }
 .cover__img {
-    width: 55%;
+    width: 52%;
     height: 690px;
 }
 .cover img {
@@ -165,14 +167,13 @@ font-weight: 500;
     text-transform: uppercase;
     margin-top: 20px;
 }
-.features__item img {
+.cover__features-item img {
     width: 50px;
     height: 50px;
 }
 /* -----------------------about-us---------------------------------------------------- */
-/* --------------------------------------block1-------------------------------------- */
 .about-us {
-    margin:120px auto;
+    margin:120px auto; 
 }
 .mb120{
     margin-bottom: 120px;
@@ -184,7 +185,7 @@ font-weight: 500;
     gap: 80px;
 }
 .about-us__image {
-    height: 600px;
+    height: 591px;
     max-width: 650px;
     object-fit: cover;
 }
@@ -201,19 +202,25 @@ font-weight: 500;
     gap: 35px;
     
 }
-.about-us__label {
+.about-us__title {
     text-transform: uppercase;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10px;
+   
+}
+.tile{
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 24px;
 }
 .about-us__info img {
     width: 20px;
     height: 20px;
 }
-.about-us__title {
+.about-us__subtitle {
     font-size: 48px;
-    font-weight: 400;
     line-height: 58px;
     padding-right: 106px;
     color: rgb(58, 58, 58);
@@ -221,17 +228,18 @@ font-weight: 500;
 .about-us__text{
     font-size: 17px;
     line-height: 26px;
+    padding-right: 20px;
 }
-/* ---------------------------------block2----------------------------------- */
 .about-us__quote {
     font-size: 26px;
     font-weight: 500;
     line-height: 34px;
     padding-right: 30px;
 }
-.padding-right30 {
+.about-us__text--bottom {
     padding-right: 30px;
     text-align: justify;
+    
 }
 .about-us__quote-icon {
     font-weight: 900;
@@ -244,143 +252,132 @@ font-weight: 500;
     font-weight: 800;
     line-height: 12px;
 }
-.about-us__image2 {
+.about-us__image--bottom {
     width: 650px;
     height: 420px;
 }
-.about-us__image2 img {
-    width: 100%;
-    height: 100%;
-}
+
 /* ------------------------------categories--------------------- */
 .categories {
-    padding: 10vh 34vw;
-    width: 100%;
-    height: 120vh;
+    padding: 10vh 32vw;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    gap:50px ;
     background-image: linear-gradient(rgb(50, 50, 50, 0.9), rgb(50, 50, 50, 0.9)), url(img/premium_photo-1689609949921-6b2529511e38\ \(1\).avif);
     background-size: cover;
     background-position: center;
-    color: white;
     text-align: center;
 }
-
-.categories img {
+.categories__header{
+display: flex;
+flex-direction: column;
+gap: 25px;
+}
+.categories__icon img{
     width: 50px;
-    padding-bottom: 20px;
+    height: auto;
 }
-
-.categories h4 {
-    font-size: 40px;
-    font-weight: 300px;
-    padding-top: 25px;
+.categories__title{
+    color:  rgb(247, 247, 245);
 }
-
-.categories__card {
-    height: 25vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 20px;
+.categories__subtitle{
+    font-size: 48px;
+    line-height: 58px;
+    color: rgb(255,255,255);
 }
-
-.categories h5 {
-    font-size: 30px;
-    font-weight: 300px;
-    padding-bottom: 35px;
+.categories__item-title{
+    font-size: 32px;
+    line-height: 45px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    margin-bottom: 23px;
 }
-
-.categories__card a {
-    color: white;
+.categories__item-title span{
+    color: rgba(239, 238, 236, 0.76);
 }
-
-.padding-bottom20 {
-    padding-bottom: 20px;
+.categories__item-text{
+font-size: 17px;
+line-height: 26px;
+color: rgb(220,220,220);
+margin-bottom: 10px;
 }
-
+.categories__item-link a{
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 800;
+    color:rgb(255, 255, 255);
+}
 /* ----------------------------features--------------------------------------- */
 .features {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    color: white;
+    justify-content: space-between;
 }
-
-.features__img {
-    width: 100%;
-    height: 100%;
+.features__img-container {
+    flex: 1;
+    display: flex;
 }
-
-.features__img img {
+.features__img  {
     width: 100%;
     height: 100%;
-
+    max-height: 812px;
+    object-fit: cover;
 }
-
 .features__info {
+    flex: 1;
     background-color: rgb(2, 119, 110);
-    width: 90%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 0 5%;
+    padding: 120px 5%;
     gap: 30px;
+    max-width: 50%;
+    max-height: 812px;
 }
-
-.features__info--wrapper {
-    width: 100%;
+.features__header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.features__title{
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+}
+.features__icon {
+    width: 20px;
+    height: 20px;
+}
+.features__subtitle {
+    font-size: 48px;
+    line-height: 58px;
+    color: rgb(255, 255, 255);
+}
+.features__text {
+    font-size: 17px;
+    line-height: 26px;
+    color: rgba(255, 255, 255, 0.76);
+}
+.features__lists {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding-left: 20px;
     gap: 130px;
-    font-size: 21px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    line-height: 26px;
 }
-
-.features__info--div-title {
-    width: 80%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 10px;
-}
-
-.features__info--div-title h6 {
-    font-size: 16px;
-    text-transform: uppercase;
-}
-
-.features__info--div-title img {
-    width: 30px;
-    height: 30px;
-}
-
-.features__info--h4 {
-    font-size: 50px;
-    letter-spacing: 1px;
-}
-
-.features__info p {
-    font-size: 21px;
-}
-
-.features__info button {
-    margin-top: 60px;
-    width: 150px;
-    height: 50px;
-    border-radius: 800px;
-    border: none;
+.features__button {
+    margin-top: 30px;
     background-color: rgb(59, 59, 59);
-    color: white;
-    font-weight: 900;
+}
+.features__button:hover{
+    background-color:rgb(255, 255, 255) ;
+    color: rgb(59, 59, 59);
 }
 
 /* ---------------------------------projects------------------------------ */
@@ -397,26 +394,22 @@ font-weight: 500;
     align-items: center;
     flex-direction: column;
     gap: 25px;
-
 }
 
 .projects__title img {
     width: 50px;
     height: 50px;
 }
-
 .projects__title h4 {
     text-transform: uppercase;
     font-size: 14px;
     color: rgb(132, 120, 104);
 }
-
 .projects__title p {
     font-size: 46px;
     padding: 0 20%;
     text-align: center;
 }
-
 .projects__cards {
     height: 160vh;
     display: flex;
@@ -424,7 +417,6 @@ font-weight: 500;
     justify-content: space-between;
     align-content: space-between;
 }
-
 .projects__card {
     width: 48%;
     height: 48%;
@@ -437,7 +429,6 @@ font-weight: 500;
     height: 100%;
 
 }
-
 .projects__card--info {
     display: flex;
     justify-content: space-around;
@@ -450,23 +441,19 @@ font-weight: 500;
     left: 30px;
     background-color: rgb(59, 59, 59);
     width: 90%;
-
 }
-
 .projects__card--info h5 {
     color: white;
     font-size: 26px;
     font-weight: 400;
     line-height: 29px;
 }
-
 .projects__card--info p {
     color: rgba(255, 255, 255, 0.81);
     font-size: 15px;
     font-weight: 500;
     line-height: 26px;
 }
-
 .projects__footer {
     height: 30vh;
     display: flex;
@@ -475,13 +462,11 @@ font-weight: 500;
     align-items: center;
     gap: 12%;
 }
-
 .projects__footer h6 {
     font-size: 35px;
     font-weight: 100;
     color: rgb(58, 58, 58);
 }
-
 .projects__footer a {
     color: rgb(90, 166, 161);
     font-size: 14px;
@@ -1057,3 +1042,22 @@ width: auto;
     cursor: pointer;
 }
 /* --------------------------------------------------------- */
+.gallery{
+    background-color: rgb(59, 59, 59);
+}
+.gallery__wrapper {
+    width: 80%;
+    display: flex;
+    margin: auto;
+    padding: 20px 0;
+}
+.swiper-wrapper{
+    display: flex;
+    gap: 20px;
+
+}
+.swiper-slide img {
+    height: 160px;
+    width: 160px;
+    object-fit: cover;
+}
