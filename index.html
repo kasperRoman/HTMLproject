@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ModCraft</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="laptop.css">
+  <link rel="stylesheet" href="tablet.css">
+  <link rel="stylesheet" href="mobile.css">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -16,81 +19,105 @@
 <body>
   <header class="header ">
     <div class="header__wrapper wrapper">
-        <h1 class="header__brand ">
-          <img class="header__icon" src="img/chair-icon-black.svg" alt="brand" />
-        </h1>
-      <nav>
+      <h1 class="header__brand ">
+        <a href="#"><img class="header__icon" src="img/chair-icon-black.svg" alt="brand" /></a>
+      </h1>
+      <nav class="nav">
         <ul class="nav__list">
           <li><a href="#" target="_blank" rel="noopener noreferrer">About us</a></li>
           <li><a href="#shop">Catalog</a></li>
           <li><a href="#" target="_blank" rel="noopener noreferrer">Projects</a></li>
           <li><a href="#news">News & Articles</a></li>
           <li><a href="#" target="_blank" rel="noopener noreferrer">Contacts</a></li>
+          <li class="social__wrapper">
+            <ul class="social__list">
+              <li>
+                <a href="https://x.com/?lang=uk" target="_blank" rel="noopener noreferrer"><img
+                    src="img/icons8-twitter-bird-60.png" alt="twitter" /></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img
+                    src="img/icons8-instagram-60.png" alt="instagram" /></a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/?locale=uk_UA" target="_blank" rel="noopener noreferrer"><img
+                    src="img/icons8-facebook-60.png" alt="facebook" /></a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><img
+                    src="img/icons8-youtube-60.png" alt="youtube" /></a>
+              </li>
+            </ul>
+          </li>
         </ul>
       </nav>
-      <div class="social__icons">
-        <ul class="social__list">
-          <li>
-            <a href="https://x.com/?lang=uk" target="_blank" rel="noopener noreferrer"><img
-                src="img/icons8-twitter-bird-60.png" alt="twitter" /></a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img
-                src="img/icons8-instagram-60.png" alt="instagram" /></a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com/?locale=uk_UA" target="_blank" rel="noopener noreferrer"><img
-                src="img/icons8-facebook-60.png" alt="facebook" /></a>
-          </li>
-          <li>
-            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><img
-                src="img/icons8-youtube-60.png" alt="youtube" /></a>
-          </li>
-        </ul>
-      </div>
+       <!-- Бургер-іконка -->
+    <button class="burger" aria-label="Toggle menu">
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+    </button>
     </div>
   </header>
+
   <main>
     <section class="cover">
-      <div class="cover__wrapper">
+      <div class="cover__wrapper wrapper">
         <div class="cover__info">
           <div class="cover__info-item">
             <h2 class="cover__title philosopher">
               Creating Furniture Crafting Memories
             </h2>
-            <p class="cover__text albert">
+            <p class="cover__text text-main">
               Welcome to the design agency and store of attractive, cozy, and
               ergonomic furniture for your dream home.
             </p>
-            <a href="#shop"><button class="button albert">Shop Now</button></a>
+            <a href="#shop" class="button cover__button">Shop Now</a>
           </div>
           <div class="cover__features">
             <div class="cover__features-item">
               <img src="img/Group 3.svg" alt="" aria-hidden="true" />
-              <p class="albert">Ergonomics</p>
+              <p class="text-main">Ergonomics</p>
             </div>
             <div class="cover__features-item">
               <img src="img/Group 4.svg" alt="" aria-hidden="true" />
-              <p class="albert">Sustainability</p>
+              <p class="text-main">Sustainability</p>
             </div>
             <div class="cover__features-item">
-              <img src="img/Group 2.svg" alt="" aria-hidden="true"/>
-              <p class="albert">Versatility</p>
+              <img src="img/Group 2.svg" alt="" aria-hidden="true" />
+              <p class="text-main">Versatility</p>
             </div>
           </div>
         </div>
-        <div class="cover__img">
-          <img src="img/photo-1583847268964-b28dc8f51f92.avif" alt="furniture" />
-        </div>
       </div>
     </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <section class="about-us wrapper">
-      <div class="about-us__block mb120">
+      <div class="about-us__block ">
         <div class="about-us__image">
           <img src="img/65fd815efef43e000f171cca_optimized_1189.webp" alt="furniture" />
         </div>
         <div class="about-us__info">
-          <h2 class="about-us__title title text-main"><img src="img/1.svg" alt="label icon" /> About us</h2>
+          <h2 class="about-us__title  text-main"><img src="img/1.svg" alt="label icon" /> About us</h2>
           <h3 class="about-us__subtitle philosopher">
             Excellence in Every Detail
           </h3>
@@ -106,7 +133,7 @@
       <div class="about-us__block">
         <div class="about-us__info">
           <p class="about-us__quote-icon">,,</p>
-          <h4 class="about-us__quote text-main ">
+          <h4 class="about-us__quote ">
             "Design creates culture. Culture shapes values. Values determine
             the future whether the pleasure."
           </h4>
@@ -396,12 +423,12 @@
             <p class="offer__element-text text-main">We constantly update the catalog of products we offer.</p>
           </div>
           <div class="offer__element">
-            <img src="img/offer-elemen3.svg" alt=""aria-hidden="true" />
+            <img src="img/offer-elemen3.svg" alt="" aria-hidden="true" />
             <h4 class="offer__element-title  philosopher">Customer Service</h4>
             <p class="offer__element-text text-main">Impeccable customer service and smooth ordering process.</p>
           </div>
           <div class="offer__element">
-            <img src="img/offer-elemen4.svg" alt=""aria-hidden="true" />
+            <img src="img/offer-elemen4.svg" alt="" aria-hidden="true" />
             <h4 class="offer__element-title  philosopher">Shipping</h4>
             <p class="offer__element-text text-main">Complimentary worldwide shipping on orders over $1,000.</p>
           </div>
@@ -497,39 +524,39 @@
     </section>
   </main>
 
-<footer class="footer">
-  <div class="footer__wrapper wrapper ">
-    <div class="footer__block-left">
-      <div class="footer__brand">
-        <img class="footer__icon" src="img/chair-icon.svg" alt="armchair" />
+  <footer class="footer">
+    <div class="footer__wrapper wrapper ">
+      <div class="footer__block-left">
+        <div class="footer__brand">
+          <img class="footer__icon" src="img/chair-icon.svg" alt="armchair" />
+        </div>
+        <ul class="footer__social-list">
+          <li>
+            <a href="https://x.com/?lang=uk" target="_blank" rel="noopener noreferrer"><img
+                src="img/icons8-twitter-bird-60.png" alt="twitter" /></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img
+                src="img/icons8-instagram-60.png" alt="instagram" /></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/?locale=uk_UA" target="_blank" rel="noopener noreferrer"><img
+                src="img/icons8-facebook-60.png" alt="facebook" /></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><img
+                src="img/icons8-youtube-60.png" alt="youtube" /></a>
+          </li>
+        </ul>
+        <h4 class="footer__subscribe">subscribe</h4>
+        <form class="subscribe-form">
+          <label for="email">Join us to get the latest updates!</label>
+          <input type="email" id="email" name="email" placeholder="email">
+          <button class="subscribe__button " type="submit">subscribe</button>
+        </form>
       </div>
-      <ul class="footer__social__list">
-        <li>
-          <a href="https://x.com/?lang=uk" target="_blank" rel="noopener noreferrer"><img
-              src="img/icons8-twitter-bird-60.png" alt="twitter" /></a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img
-              src="img/icons8-instagram-60.png" alt="instagram" /></a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/?locale=uk_UA" target="_blank" rel="noopener noreferrer"><img
-              src="img/icons8-facebook-60.png" alt="facebook" /></a>
-        </li>
-        <li>
-          <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><img
-              src="img/icons8-youtube-60.png" alt="youtube" /></a>
-        </li>
-      </ul>
-      <h4 class="footer__subscribe">subscribe</h4>
-      <form class="subscribe-form">
-        <label for="email">Join us to get the latest updates!</label>
-        <input type="email" id="email" name="email" placeholder="email">
-        <button class="subscribe__button button" type="submit">subscribe</button>
-      </form>
     </div>
-  </div>
-</footer>
+  </footer>
 
 
 

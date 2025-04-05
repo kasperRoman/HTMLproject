@@ -41,3 +41,13 @@ document.querySelector(".next").addEventListener("click", () => {
 
 createDots();
 updateTestimonial(currentIndex);
+
+
+
+
+const burger = document.querySelector('.burger');
+const navList = document.querySelector('.nav__list');
+
+burger.addEventListener('click', () => {
+  navList.classList.toggle('active');
+});
