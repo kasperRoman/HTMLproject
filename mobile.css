@@ -1,18 +1,20 @@
 @media (min-width: 320px) and (max-width: 480px) {
 
-    html{
+    html {
         font-size: 11px;
-      }
-      .wrapper{
-          padding: 0 5%;
-      }
+    }
+
+    .wrapper {
+        padding: 0 20px;
+    }
+
     /* ------------------------------header------------------ */
     .burger {
-        display: flex; 
+        display: flex;
     }
 
     .nav__list {
-        display: none; 
+        display: none;
         flex-direction: column;
         align-items: center;
         position: absolute;
@@ -25,38 +27,87 @@
     }
 
     .nav__list.active {
-        display: flex; 
+        display: flex;
     }
+
     .social__wrapper {
         margin-left: 0;
     }
+
     .social__list {
         display: flex;
         justify-content: center;
     }
-    .nav__list a{
+
+    .nav__list a {
         font-size: 24px;
     }
+
     .social__list img {
         height: 35px;
-        
     }
+
     /* ----------------------------cover-------------------------------- */
-    .cover__info{
+    .cover__info {
         padding-bottom: 30px;
         max-width: 100%;
         gap: 60px;
     }
+
     .cover__text {
+        width: 90%;
+        text-align: justify;
         padding-right: 0;
     }
+
     .cover__features {
         display: none;
-    
     }
-    .cover{
+
+    .cover {
         background-position: left;
     }
+
+    /* -----------------------------------about us-------------------------- */
+    .about-us {
+        margin: 90px auto;
+        gap: 30px;
+    }
+
+    .about-us__block {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .about-us__image {
+        min-width: 352px;
+    }
+
+    .about-us__subtitle {
+        padding-right: 10.6rem;
+    }
+/* -----------------------categories------------------------------------------------- */
+    .categories {
+        padding: 150px 10px ;
+    }
+    .categories__subtitle {
+       padding: 0 20px;
+    }
+    .categories__item-text {
+        padding: 0 10px;
+        margin-bottom: 30px;
+    }
+
+
+
+
+
+
+
+
+
+
 
 
 

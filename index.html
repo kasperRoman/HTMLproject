@@ -51,12 +51,11 @@
           </li>
         </ul>
       </nav>
-       <!-- Бургер-іконка -->
-    <button class="burger" aria-label="Toggle menu">
-      <span class="burger__line"></span>
-      <span class="burger__line"></span>
-      <span class="burger__line"></span>
-    </button>
+      <button class="burger" aria-label="Toggle menu">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
     </div>
   </header>
 
@@ -156,7 +155,7 @@
     <section class="categories">
       <div class="categories__header">
         <div class="categories__icon"><img src="img/1.svg" alt="label icon" /></div>
-        <h2 class="categories__title title">CATEGORIES</h2>
+        <h2 class="categories__title">CATEGORIES</h2>
         <h3 class="categories__subtitle philosopher">Your Space, Our Expertise</h3>
       </div>
       <div class="categories__item">
@@ -525,38 +524,157 @@
   </main>
 
   <footer class="footer">
-    <div class="footer__wrapper wrapper ">
-      <div class="footer__block-left">
-        <div class="footer__brand">
-          <img class="footer__icon" src="img/chair-icon.svg" alt="armchair" />
+    <div class="footer__wrapper wrapper">
+      <div class="footer__top">
+        <div class="footer__brand-social">
+          <div class="footer__brand">
+            <img class="footer__logo" src="img/chair-icon.svg" alt="armchair" />
+          </div>
+          <ul class="footer__social-list">
+            <li>
+              <a href="https://x.com/?lang=uk" target="_blank" rel="noopener noreferrer">
+                <img src="img/icons8-twitter-bird-60.png" alt="twitter" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                <img src="img/icons8-instagram-60.png" alt="instagram" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/?locale=uk_UA" target="_blank" rel="noopener noreferrer">
+                <img src="img/icons8-facebook-60.png" alt="facebook" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+                <img src="img/icons8-youtube-60.png" alt="youtube" />
+              </a>
+            </li>
+          </ul>
         </div>
-        <ul class="footer__social-list">
-          <li>
-            <a href="https://x.com/?lang=uk" target="_blank" rel="noopener noreferrer"><img
-                src="img/icons8-twitter-bird-60.png" alt="twitter" /></a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img
-                src="img/icons8-instagram-60.png" alt="instagram" /></a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com/?locale=uk_UA" target="_blank" rel="noopener noreferrer"><img
-                src="img/icons8-facebook-60.png" alt="facebook" /></a>
-          </li>
-          <li>
-            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><img
-                src="img/icons8-youtube-60.png" alt="youtube" /></a>
-          </li>
-        </ul>
-        <h4 class="footer__subscribe">subscribe</h4>
-        <form class="subscribe-form">
-          <label for="email">Join us to get the latest updates!</label>
-          <input type="email" id="email" name="email" placeholder="email">
-          <button class="subscribe__button " type="submit">subscribe</button>
-        </form>
+        <div class="footer__description">
+          <h3 class="footer__about">
+            <span>ModCraft</span> is a leading furniture manufacturer known worldwide for its impeccable
+            <i> quality</i>, exceptional customer service, and fair prices.
+          </h3>
+          <div class="footer__divider"></div>
+        </div>
+      </div>
+  
+      <div class="footer__bottom">
+        <div class="footer__subscribe">
+          <h4 class="footer__title">Subscribe</h4>
+          <form class="subscribe__form">
+            <label for="email" class="subscribe__label">Join us to get the latest updates!</label>
+            <input type="email" id="email" name="email" class="subscribe__input" placeholder="email" />
+            <button type="submit" class="subscribe__button">Subscribe</button>
+          </form>
+        </div>
+  
+        <div class="footer__navigation">
+          <div class="footer__links">
+            <h4 class="footer__title">Navigation</h4>
+            <a href="#">About us</a>
+            <a href="#">Catalog</a>
+            <a href="#">Testimonials</a>
+            <a href="#">Blog</a>
+          </div>
+          <div class="footer__links">
+            <h4 class="footer__title">Support</h4>
+            <a href="#">FAQ</a>
+            <a href="#">Projects</a>
+            <a href="#">Careers</a>
+            <a href="#">Contacts</a>
+          </div>
+          <div class="footer__contacts">
+            <h4 class="footer__title">Contacts</h4>
+            <p>119-14 165th St, Rochdale, NY 11434</p>
+            <a href="#">+1 (234) 567 89 01</a>
+            <a href="#">+1 (234) 567 89 00</a>
+            <a href="#">modcraft_furniture@email.com</a>
+          </div>
+        </div>
       </div>
     </div>
   </footer>
+  <!-- <footer class="footer">
+    <div class="footer__wrapper wrapper ">
+      <div class="footer__top">
+        <div class="footer__header-block">
+          <div class="footer__brand">
+            <img class="footer__logo" src="img/chair-icon.svg" alt="armchair" />
+          </div>
+          <ul class="footer__social-list">
+            <li>
+              <a href="https://x.com/?lang=uk" target="_blank" rel="noopener noreferrer"><img
+                  src="img/icons8-twitter-bird-60.png" alt="twitter" /></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img
+                  src="img/icons8-instagram-60.png" alt="instagram" /></a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/?locale=uk_UA" target="_blank" rel="noopener noreferrer"><img
+                  src="img/icons8-facebook-60.png" alt="facebook" /></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><img
+                  src="img/icons8-youtube-60.png" alt="youtube" /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__subtitle-wrapper">
+          <h3 class="footer__subtitle"><span>ModCraft</span> is a leading furniture manufacturer known worldwide for its
+            impeccable
+            <i> quality</i>, exceptional customer service, and fair prices.
+          </h3>
+          <div class="footer__subtitle-line"></div>
+        </div>
+      </div>
+
+
+      
+      <div class="footer__nav">
+        <div class="footer__subscribe-wrapper">
+          <h4 class="footer__subscribe-title">subscribe</h4>
+          <form class="subscribe-form">
+            <label for="email">Join us to get the latest updates!</label>
+            <input type="email" id="email" name="email" placeholder="email">
+            <button class="subscribe__button " type="submit">subscribe</button>
+          </form>
+        </div>
+        <div class="footer__nav-block">
+          <div class="footer__navigation ">
+            <h4 class="footer__navigation-title">navigation</h4>
+            <span class="footer-line"></span>
+            <a href="#">About us</a>
+            <a href="#">Catalog</a>
+            <a href="#">Testimonials</a>
+            <a href="#">Blog</a>
+          </div>
+          <div class="footer__support">
+            <h4 class="footer__suport-tetle"> support</h4>
+            <span class="footer-line"></span>
+            <a href="#">FAQ</a>
+            <a href="#">Projects</a>
+            <a href="#">Careers</a>
+            <a href="#">Contacts</a>
+          </div>
+          <div class="footer__contacts">
+            <h4 class="footer__contacts-title">contacts</h4>
+            <span class="footer-line"></span>
+            <div>119-14 165th St, Rochdale, NY 11434</div>
+            <a href="#">+1 (234) 567 89 01</a>
+            <a href="#">+1 (234) 567 89 00</a>
+            <a href="#">modcraft_furniture@email.com</a>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </footer> -->
 
 
 

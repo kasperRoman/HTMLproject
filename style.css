@@ -316,6 +316,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 25px;
+
 }
 
 .categories__icon img {
@@ -324,18 +325,22 @@ body {
 }
 
 .categories__title {
+    padding: 1px 0;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 800;
     color: rgb(247, 247, 245);
 }
 
 .categories__subtitle {
-    font-size: 48px;
-    line-height: 58px;
+    font-size: 3rem;
+    line-height: 3.625rem;
     color: rgb(255, 255, 255);
 }
 
 .categories__item-title {
-    font-size: 32px;
-    line-height: 45px;
+    font-size: 2rem;
+    line-height: 2.8rem;
     font-weight: 400;
     color: rgb(255, 255, 255);
     margin-bottom: 23px;
@@ -480,11 +485,13 @@ body {
 .projects__card {
     max-height: 555px;
     position: relative;
+    overflow: hidden;
 }
 
 .projects__card-img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .projects__card-info {
@@ -607,6 +614,7 @@ body {
     width: 100%;
     max-width: 650px;
     height: auto;
+    overflow: hidden;
 }
 
 .partners__img img {
@@ -668,6 +676,7 @@ body {
     gap: 33px;
     flex: 1 1 calc(33.333% - 60px);
     height: auto;
+    overflow: hidden;
 }
 
 .product__link {
@@ -677,6 +686,7 @@ body {
     width: 100%;
     max-width: 350px;
     height: auto;
+    overflow: hidden;
 }
 
 .product__img {
@@ -715,7 +725,9 @@ body {
     text-decoration: line-through;
     margin-right: 20px;
 }
-
+.product__button{
+    margin-left: 5px;
+}
 .product__button:hover {
     background-color: rgb(255, 255, 255);
     color: rgb(59, 59, 59);
@@ -1159,12 +1171,18 @@ body {
 .footer__wrapper {
     padding: 80px 0 80px;
     display: flex;
+    flex-direction: column;
+    gap: 60px;
 
 }
 
-.footer__block-left {
-    max-width: 450px;
-    height: auto;
+.footer__top {
+  display: flex;
+  gap: 70px;
+
+}
+.footer__brand-social{
+   min-width: 340px;
 }
 
 .footer__brand {
@@ -1172,7 +1190,7 @@ body {
     height: auto;
 }
 
-.footer__icon {
+.footer__logo {
     width: 100%;
     height: auto;
 }
@@ -1188,9 +1206,31 @@ body {
 .footer__social-list img {
     width: 24px;
     height: 24px;
+  
+}
+.footer__about{
+    font-size: 1.4rem;
+    line-height:2.125rem ;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+.footer__about span{
+color: rgb(2, 119, 110);
+}
+.footer__divider{
+    margin-top: 50px;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(96, 96, 95 , 0.1);
+}
+.footer__bottom{
+    display: flex;
+    align-items: flex-start;
+    gap: 80px;
+
 }
 
-.footer__subscribe {
+.footer__title {
     margin-top: 80px;
     margin-bottom: 25px;
     text-transform: uppercase;
@@ -1200,14 +1240,14 @@ body {
     font-weight: 800;
 }
 
-.subscribe-form label {
+.subscribe__form label {
     color: rgba(255, 255, 255, 0.76);
     font-size: 15px;
     font-weight: 500;
     line-height: 26px;
 }
 
-.subscribe-form input {
+.subscribe__form input {
     width: 340px;
     background-color: rgb(50, 50, 50);
     padding: 12px 12px;
@@ -1228,11 +1268,28 @@ body {
 }
 
 
-
-
 label,
 input {
     display: block;
-
-
 }
+
+
+.footer__navigation{
+    display: flex;
+    align-items: flex-start;
+    gap: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
