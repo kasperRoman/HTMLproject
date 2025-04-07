@@ -81,7 +81,7 @@
     }
 
     .about-us__image {
-        min-width: 352px;
+        max-width: 312px;
     }
 
     .about-us__subtitle {
@@ -98,14 +98,255 @@
         padding: 0 10px;
         margin-bottom: 30px;
     }
+/* ----------------------------features--------------------------------------- */
+.features {
+    flex-direction: column;
+}
+
+.features__img-container {
+  width: 100%;
+  height: auto;
+}
+.features__info {
+    padding: 90px 20px;
+    gap: 20px;
+    max-width: 100%;
+}
 
 
+.features__lists {
+    display: flex;
+   flex-direction: column;
+   gap: 10px; 
+}
+/* ---------------------------------projects------------------------------ */
+.projects__header {
+    margin-top: 90px;
+}
+.projects__subtitle {
+    padding: 0 ;
+}
+
+.projects__cards {
+    grid-template-columns: repeat(1, 1fr);
+
+}
+
+.projects__card {
+    max-height: 352px;
+}
+/* -------------------------------------partners------------------------------ */
+.partners {
+    margin-top: 120px;
+    background-color: rgb(247, 247, 245);
+}
+
+.partners__wrapper {
+    flex-direction: column;
+    padding: 120px 20px;
+}
+
+.partners__gallery {
+    gap: 10px;
+}
+
+.partners__gallery img {
+    max-width: 85px;
+}
+
+/* -------------------------------------------highlights------------------------------------ */
+.shop {
+    padding: 120px 20px;
+}
+
+.shop__products {
+    flex-direction: column;
+}
+
+/* --------------------------------------------statistics---------------------------------- */
+.statistics {
+    flex-direction: column;
+ 
+}
+
+/* --------------------------------offer-------------------------------------- */
+.offer {
+    margin-top: 90px;
+
+}
+
+.offer__header {
+    margin-bottom: 30px;
+}
+
+.offer__info {
+    flex-direction: column;
+    gap: 30px;
+}
 
 
+.offer__info-text {
+    margin-bottom: 30px;
+}
 
 
+.offer__hr {
+    margin-top: 60px;
+}
+
+.offer__block {
+    flex-direction: column;
+  
+}
+
+.offer__block-img {
+    width: 100%;
+}
+
+.offer__elements {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.offer__element {
+
+    max-width: 100%;
+    padding: 0 10px;
+}
+/*---------------------------------comьents----------------------------------------- */
+.slider {
+    width: 100%;
+}
+
+.slider__wrapper {
+    align-items: flex-start;
+}
+
+.slider__wrapper img {
+    height: 100px;
+}
+
+.quote {
+    font-size: 17px;
+    line-height: 26px;
+}
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/* ----------------------------news--------------------------------------------- */
+.news {
+    margin-top: 0;
+}
+
+.news__wrapper {
+    margin: 60px auto;
+}
+.news__subtitle {
+    margin-top: 30px;
+}
+
+.news__cards {
+    flex-direction: column;
+    gap: 30px;
+}
+
+.news__cards-left {
+    margin-top: 90px;
+}
 
 
+/* --------------------------gallery------------------------------- */
+
+.gallery__wrapper {
+    padding: 20px ;
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+.swiper-wrapper {
+    grid-template-columns: 1fr;
+}
+.swiper-slide  {
+  width: 100%;
+   height: auto;
+
+}
+.swiper-wrapper .swiper-slide{
+    display: none;
+}
+.swiper-wrapper .swiper-slide:nth-child(1){
+    display: block;
+}
+
+.swiper__button-next {
+    right: 5px;
+
+}
+
+.swiper__button-prev {
+    left: 5px;
+}
+
+/* ---------------------------------foooter------------------------------- */
+.footer__wrapper{
+    padding: 60px 20px 60px;
+}
+.footer__top {
+  flex-direction: column;
+  align-items: center;
+
+}
+.footer__brand-social{
+ padding-right: 0;
+}
+
+.footer__about{
+    padding: 0 20px;
+}
+
+
+.footer__bottom{
+    flex-direction: column;
+   align-items: center;
+    gap: 20px;
+
+}
+.footer__title {
+    margin-top: 60px;
+    text-align: center;
+}
+.subscribe__form input {
+    width: 250px;
+}
+
+.subscribe__button {
+    width: 250px;
+ 
+}
+
+.footer__navigation{
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.footer__links span , .footer__contacts span{
+height: 4px;
+background-color: rgb(2, 119, 110);
+width: 33px;
+}
 
 
 
