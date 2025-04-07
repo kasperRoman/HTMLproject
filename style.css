@@ -1260,7 +1260,7 @@ color: rgb(2, 119, 110);
 .footer__subscribe{
    display: flex;
    flex-direction: column;
-   align-items: center;
+   align-items: flex-start;
 
 }
 .subscribe__form input {

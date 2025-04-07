@@ -330,6 +330,12 @@
 .subscribe__form input {
     width: 250px;
 }
+.footer__subscribe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+ }
 
 .subscribe__button {
     width: 250px;
@@ -347,16 +353,4 @@ height: 4px;
 background-color: rgb(2, 119, 110);
 width: 33px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 }
