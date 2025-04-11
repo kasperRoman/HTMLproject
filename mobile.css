@@ -147,6 +147,7 @@
 .partners__wrapper {
     flex-direction: column;
     padding: 120px 20px;
+    align-items: center;
 }
 
 .partners__gallery {
@@ -329,7 +330,7 @@ height: 300px;
 
 }
 .footer__title {
-    margin-top: 0;
+    margin-top: 30px;
     text-align: center;
 }
 .subscribe__form input {
