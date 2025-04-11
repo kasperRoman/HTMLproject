@@ -1,4 +1,4 @@
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
    
         html{
           font-size: 12px;
@@ -51,4 +51,101 @@
     .cover{
         background-position: left;
     }
+
+
+/* --------------------------gallery------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------gallery------------------------------- */
+
+.gallery__wrapper {
+    padding: 20px ;
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+.swiper-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+}
+.swiper-slide  {
+  width: 200px;
+   height: auto;
+
+}
+.swiper-wrapper .swiper-slide{
+    display: none;
+}
+.swiper-wrapper .swiper-slide:nth-child(1){
+    display: block;
+}
+.swiper-wrapper .swiper-slide:nth-child(2){
+    display: block;
+}
+
+
+.swiper__button-next {
+    right: 5px;
+
+}
+
+.swiper__button-prev {
+    left: 5px;
+}
+
+/* ---------------------------------foooter------------------------------- */
+.footer__top {
+  gap: 10px;
+}
+
+.footer__bottom{
+ gap: 10px;
+
+}
+    
 }
