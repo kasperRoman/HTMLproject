@@ -77,6 +77,7 @@ body {
     justify-content: flex-start;
     gap: 16px;
     list-style: none;
+    
 }
 
 .nav__list a {
@@ -129,6 +130,19 @@ body {
     background-color: rgb(29, 27, 27);
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
+.burger.active .burger__line:nth-child(1) {
+  transform: translateY(7.5px) rotate(45deg);
+}
+.burger.active .burger__line:nth-child(2) {
+  opacity: 0;
+}
+.burger.active .burger__line:nth-child(3) {
+  transform: translateY(-7.5px) rotate(-45deg);
+}
+
+
+
+
 
 /* ------------------------------------main-------cover---------------------------------------- */
 .cover {
@@ -931,6 +945,7 @@ body {
 /*---------------------------------comьents----------------------------------------- */
 .comments {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -1008,6 +1023,54 @@ body {
 .dot.active {
     background: gray;
 }
+/* ----------------------------------------- */
+
+.comment-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 80%;
+  max-width: 940px;
+}
+
+.comment-form textarea,
+.comment-form input {
+    width: 80%;
+    text-align: center;
+  padding: 10px;
+  border: none;
+  border-radius: 30px;
+  resize: vertical;
+   font-style: italic;
+    color: rgb(58, 58, 58);
+    font-size: 21px;
+    line-height: 34px;
+  
+  
+}
+
+.comment-form button {
+ font-family: "Albert Sans", sans-serif;
+    width: max-content;
+    padding: 16px 30px;
+    border: none;
+    background-color: rgb(2, 119, 110);
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+    border-radius: 30px;
+}
+
+.comment-form button:hover {
+  transform: scale(1.05);
+    background-color: rgb(59, 59, 59);
+    cursor: pointer;
+}
+
 
 /* ----------------------------news--------------------------------------------- */
 .news {
@@ -1129,19 +1192,28 @@ body {
     position: relative;
     display: grid;
     place-items: center;
+
+}
+
+.swiper-container {
+  width: 900px; /* 5 слайдів по 160px */
+  overflow: hidden;
 }
 
 .swiper-wrapper {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 30px;
-}
-.swiper-slide  {
-    height: 160px;
-   width: 160px;
-
+  display: flex;
+  transition: transform 0.5s ease-in-out;
 }
 
+.swiper-slide {
+  width: 160px;
+  height: 160px;
+  flex-shrink: 0;
+   margin-right: 20px;
+}
+.swiper-slide:last-child {
+  margin-right: 0;
+}
 
 .swiper-slide img {
     width: 100%;
@@ -1162,12 +1234,12 @@ body {
 }
 
 .swiper__button-next {
-    right: 0;
+    right: 10px;
 
 }
 
 .swiper__button-prev {
-    left: 0;
+    left: 10px;
 }
 
 /* ---------------------------------foooter------------------------------- */

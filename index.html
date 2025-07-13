@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ModCraft</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="laptop.css">
   <link rel="stylesheet" href="tablet.css">
   <link rel="stylesheet" href="mobile.css">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -58,7 +57,6 @@
       </button>
     </div>
   </header>
-
   <main>
     <section class="cover">
       <div class="cover__wrapper wrapper">
@@ -430,8 +428,15 @@
           </div>
         </div>
         <button class="nav-btn next">&#10095;</button>
-        <div class="dots" id="dots"></div>
+        <div class="dots" id="dots">
+
+        </div>
       </div>
+       <form id="commentForm" class="comment-form">
+      <textarea  id="userQuote" placeholder="Your comment.." required></textarea>
+      <input type="text" id="userName" placeholder="Your name" autocomplete="on" required>
+      <button type="submit">Submit</button>
+      </form>
     </section>
     <section class="news" id="news">
       <div class="news__wrapper wrapper">
@@ -478,30 +483,51 @@
     <section class="gallery">
       <div class="gallery__wrapper wrapper">
         <button class="swiper__button swiper__button-prev">&#10094;</button>
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="img/swiper1.webp" alt="Image 1" />
-          </div>
-          <div class="swiper-slide">
-            <img src="img/swiper2.webp" alt="Image 2" />
-          </div>
-          <div class="swiper-slide">
-            <img src="img/swiper3.webp" alt="Image 3" />
-          </div>
-          <div class="swiper-slide">
-            <img src="img/swiper4.webp" alt="Image 4" />
-          </div>
-          <div class="swiper-slide">
-            <img src="img/swiper5.webp" alt="Image 5" />
-          </div>
-          <div class="swiper-slide">
-            <img src="img/swiper6.webp" alt="Image 6" />
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="img/swiper1.webp" alt="Image 1" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/swiper2.webp" alt="Image 2" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/swiper3.webp" alt="Image 3" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/swiper4.webp" alt="Image 4" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/swiper5.webp" alt="Image 5" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/swiper6.webp" alt="Image 6" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/swiper4.webp" alt="Image 4" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/swiper5.webp" alt="Image 5" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/swiper6.webp" alt="Image 6" />
+            </div>
+                        <div class="swiper-slide">
+              <img src="img/swiper1.webp" alt="Image 1" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/swiper2.webp" alt="Image 2" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/swiper3.webp" alt="Image 3" />
+            </div>
           </div>
         </div>
         <button class="swiper__button swiper__button-next">&#10095;</button>
       </div>
     </section>
   </main>
+  
 
   <footer class="footer">
     <div class="footer__wrapper wrapper">
@@ -541,17 +567,17 @@
           <div class="footer__divider"></div>
         </div>
       </div>
-  
+
       <div class="footer__bottom">
         <div class="footer__subscribe">
           <h4 class="footer__title">Subscribe</h4>
           <form class="subscribe__form">
             <label for="email" class="subscribe__label">Join us to get the latest updates!</label>
-            <input type="email" id="email" name="email" class="subscribe__input" placeholder="email" />
+            <input type="email" id="email" name="email" class="subscribe__input" placeholder="email" autocomplete="on" />
             <button type="submit" class="subscribe__button">Subscribe</button>
           </form>
         </div>
-  
+
         <div class="footer__navigation">
           <div class="footer__links">
             <h4 class="footer__title">Navigation</h4>
@@ -581,7 +607,7 @@
       </div>
     </div>
   </footer>
- 
+
 
   <script src="script.js"></script>
 </body>
